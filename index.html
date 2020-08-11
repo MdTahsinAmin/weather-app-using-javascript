@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="Content-Security-Policy" content="upgrade-insecure-request">
+    <title>Weather Report Website</title>
+    <!--Bootstrap-->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+    <!--Google font-->
+    <link href="https://fonts.googleapis.com/css2?family=Roboto+Condensed&display=swap" rel="stylesheet">
+
+    <!--CSS-->
+    <link rel="stylesheet" href="style.css">
+
+</head>
+<body>
+    <div id="search-container">
+        <input id ="searchInput" class ="searchControl" type="text" placeholder="City name or zip code">
+        <button class="searchControl" id ="search-Btn">Search</button>
+    </div>
+    <div id="weather-container">
+       <div id="weatherDescription">
+           <h1 id ="cityHeader"></h1>
+           <div id="weatherMain">
+               <div id="temperature"></div>
+               <div id="weatherDescriptionHeader"></div>
+               <div><img id="documentIdImg" src="" alt=""></div>
+           </div>
+            <hr>
+           <div id="windSpeed" class="bottomDetails"></div>
+           <div id="humidity" class="bottomDetails"></div>
+       </div>
+    </div>
+    <script src="main.js"></script>
+</body>
+</html>
